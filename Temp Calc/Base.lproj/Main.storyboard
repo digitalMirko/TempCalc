@@ -35,6 +35,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="OPF-H2-t8y"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-Ig-FRG">
                                 <rect key="frame" x="16" y="116" width="343" height="34"/>
@@ -64,6 +67,9 @@
                                     <segment title="Calculate to ℉"/>
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="formatCalculation:" destination="BYZ-38-t0r" eventType="valueChanged" id="lhg-hS-cbo"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-9c-zE3">
                                 <rect key="frame" x="16" y="570" width="343" height="34"/>
@@ -105,6 +111,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calcOutputLabel" destination="8LB-96-plb" id="pub-7R-TXC"/>
+                        <outlet property="enterLabel" destination="6d8-Ig-FRG" id="fqW-dc-okv"/>
+                        <outlet property="fillinTextField" destination="QG8-UA-wR6" id="ARn-U1-DpL"/>
+                        <outlet property="graphicImageView" destination="8ES-QV-cfJ" id="UBL-xf-cM5"/>
+                        <outlet property="segmentedControl" destination="q69-eM-fDm" id="BZs-Te-tmT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
