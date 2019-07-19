@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var graphicImageView: UIImageView!
     // Calculation Output Label, changes depending on type selection
     @IBOutlet weak var calcOutputLabel: UILabel!
+    // message for certain temperatures
+    @IBOutlet weak var messageAboutLabel: UILabel!    
     // Segmented controller on the bottom
     @IBOutlet weak var segmentedControl: UISegmentedControl!
 

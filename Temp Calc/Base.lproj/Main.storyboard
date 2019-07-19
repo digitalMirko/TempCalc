@@ -116,6 +116,7 @@
                         <outlet property="enterLabel" destination="6d8-Ig-FRG" id="fqW-dc-okv"/>
                         <outlet property="fillinTextField" destination="QG8-UA-wR6" id="ARn-U1-DpL"/>
                         <outlet property="graphicImageView" destination="8ES-QV-cfJ" id="UBL-xf-cM5"/>
+                        <outlet property="messageAboutLabel" destination="7Et-9c-zE3" id="DIO-Uc-zsq"/>
                         <outlet property="segmentedControl" destination="q69-eM-fDm" id="BZs-Te-tmT"/>
                     </connections>
                 </viewController>
