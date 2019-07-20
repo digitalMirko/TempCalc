@@ -47,15 +47,34 @@ class ViewController: UIViewController {
             // 4 digits before . and 2 digits after
             calcOutputLabel.text = String(format: "%4.2f° Celsius", celsius)
             
-//            if celsius == 100 {
-//                messageAboutLabel.text = "Boiling Point of Water"
-//            }
-            
             // images to display
-            if celsius >= 100 {
+            if celsius > 99.9 {
                 graphicImageView.image = UIImage(named: "Temp9")
                 messageAboutLabel.text = "100° Celsius: Boiling Point of Water"
-
+            } else  if celsius > 69.9 {
+                graphicImageView.image = UIImage(named: "Temp8")
+                messageAboutLabel.text = ""
+            } else  if celsius > 49.9 {
+                graphicImageView.image = UIImage(named: "Temp7")
+                messageAboutLabel.text = ""
+            } else  if celsius > 36.9 {
+                graphicImageView.image = UIImage(named: "Temp6")
+                messageAboutLabel.text = "37° Celsius: Average Body Temperature"
+            } else  if celsius >= 20.9 {
+                graphicImageView.image = UIImage(named: "Temp5")
+                messageAboutLabel.text = "21.6° Celsius: Room Temperature"
+            } else  if celsius >= 0 {
+                graphicImageView.image = UIImage(named: "Temp4")
+                messageAboutLabel.text = "0° Celsius: Freezing Point of Water"
+            } else  if celsius >= -18 {
+                graphicImageView.image = UIImage(named: "Temp3")
+                messageAboutLabel.text = ""
+            } else  if celsius >= -29.1 {
+                graphicImageView.image = UIImage(named: "Temp2")
+                messageAboutLabel.text = ""
+            } else  if celsius <= -29 {
+                graphicImageView.image = UIImage(named: "Temp1")
+                messageAboutLabel.text = ""
             }
         }
         
