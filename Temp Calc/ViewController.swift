@@ -87,6 +87,36 @@ class ViewController: UIViewController {
             // put in label, converting Double back into a String,
             // 4 digits before . and 2 digits after
             calcOutputLabel.text = String(format: "%4.2f° Fahrenheit", fahrenheit)
+            
+            // images to display
+            if fahrenheit >= 211 {
+                graphicImageView.image = UIImage(named: "Temp9")
+                messageAboutLabel.text = "212° Fahrenheit: Boiling Point of Water"
+            } else  if fahrenheit >= 157 {
+                graphicImageView.image = UIImage(named: "Temp8")
+                messageAboutLabel.text = ""
+            } else  if fahrenheit >= 121 {
+                graphicImageView.image = UIImage(named: "Temp7")
+                messageAboutLabel.text = ""
+            } else  if fahrenheit >= 98 {
+                graphicImageView.image = UIImage(named: "Temp6")
+                messageAboutLabel.text = "98.6° Fahrenheit: Average Body Temperature"
+            } else  if fahrenheit >= 69 {
+                graphicImageView.image = UIImage(named: "Temp5")
+                messageAboutLabel.text = "69.8° Fahrenheit: Room Temperature"
+            } else  if fahrenheit >= 31 {
+                graphicImageView.image = UIImage(named: "Temp4")
+                messageAboutLabel.text = "32° Fahrenheit: Freezing Point of Water"
+            } else  if fahrenheit >= 0 {
+                graphicImageView.image = UIImage(named: "Temp3")
+                messageAboutLabel.text = ""
+            } else  if fahrenheit >= -20.1 {
+                graphicImageView.image = UIImage(named: "Temp2")
+                messageAboutLabel.text = ""
+            } else  if fahrenheit <= -20 {
+                graphicImageView.image = UIImage(named: "Temp1")
+                messageAboutLabel.text = ""
+            }
         }
         
     }
@@ -111,9 +141,6 @@ class ViewController: UIViewController {
             // Bottom output label under Thermometer graphic
             calcOutputLabel.text = "0 Fahrenheit"
         }
-        
     }
-    
-
 }
 
