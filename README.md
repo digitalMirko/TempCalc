@@ -12,7 +12,6 @@ is a segmented control with the options: Calculate to °C or Calculate to °F.
 
 Its a fun and easy to use app for all ages.
 
-Coming soon:
 Details and the screen cap images of the app in use can be found on <a href="http://digitalmirko.com/iOSApps.html">Digital Mirko</a>.
 
 Screen Cap on a iPhone Xr device:(shown below)</br>
